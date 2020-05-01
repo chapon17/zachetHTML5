@@ -38,6 +38,7 @@
 .nav-ul-li-a:hover {
     color: #c7b299;
 }
+
 .nav-ul-li-a:active {
     color: white;
 }
@@ -106,12 +107,35 @@
     fill: white;
     margin-left: 60px;
 }
-.waxom-icon:hover{
-    fill: #c7b299;
+
+.cart-search {
+    fill: white;
+    margin-left: 60px;
+    margin-top: 15px;
 }
-.waxom-icon:active{
+
+.cart-search:hover {
+    fill: #c7b299;
+
+}
+
+.cart-search:active {
     fill: white;
 }
+
+.cart-icon {
+    fill: white;
+    margin-left: 60px;
+}
+
+.waxom-icon:hover {
+    fill: #c7b299;
+}
+
+.waxom-icon:active {
+    fill: white;
+}
+
 .cart-icon {
     margin-top: 15px;
 }
@@ -119,6 +143,7 @@
 .cart-icon:hover {
     fill: #c7b299;
 }
+
 .cart-icon:active {
     fill: white;
 }
@@ -171,4 +196,30 @@
     text-decoration: none;
     position: relative;
     margin-top: 50px;
+}
+
+.header-search[type="search"] {
+    width: 27px;
+    height: 28px;
+    outline: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: transparent;
+    border: 1px solid gray;
+    visibility: hidden;
+    
+}
+
+.header-search{
+    margin: 0;
+    padding: 0;
+}
+
+.cart-search::selection + .header-search {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
+    visibility: visible;
+    
+    
 }
